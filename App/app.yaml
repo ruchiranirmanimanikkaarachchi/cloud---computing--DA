@@ -3,8 +3,9 @@ env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
 runtime_config:
-  python_version: 3
-
+  python_version: 3.7
+manual_scaling:
+  instances: 2
 
 #[START gae_flex_mysql_env]
 env_variables:
